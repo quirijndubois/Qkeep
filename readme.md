@@ -8,6 +8,11 @@ This project is a simple, easy to use notes app that you can host yourself. It's
 ```bash
 git clone https://github.com/quirijndubois/Qkeep
 ```
+and cd into the repo
+```bash
+cd Qkeep
+```
+
 2. Install the requirements with 
 ```bash
 pip install -r requirements.txt
