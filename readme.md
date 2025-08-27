@@ -1,7 +1,7 @@
 # Qkeep
 A simple django notes website to replace google keep. Fuck google. We don't need their tracking, selling our data, and all the other shady shit they do. We just need a simple, easy to use notes app. That's it.
 
-This project is a simple, easy to use notes app that you can host yourself. It's not meant to be a fancy app, just a simple way to keep your notes private.
+This project is a simple, easy to use notes app that you can host yourself. It's not meant to be a fancy app, just a simple way to keep your notes.
 
 ## Installation
 1. Clone the repo with `git clone https://github.com/quirijndubois/Qkeep`
