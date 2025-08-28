@@ -13,7 +13,7 @@
 </div>
 
 <div class="modal fade" id="newNoteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl d-flex align-items-center" style="max-width: 80vw;">
+  <div class="modal-dialog modal-xl d-flex align-items-center" style="max-width: 80vw; margin-bottom: 3rem;">
     <div class="modal-content">
       <form method="POST" action="{% url 'new_note' %}">
         {% csrf_token %}
