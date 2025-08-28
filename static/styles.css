@@ -1,0 +1,15 @@
+/* static/css/styles.css */
+.modal-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.modal-header {
+  padding-left: 0;
+}
+.form-control:focus,
+.button:focus {
+  box-shadow: none;
+}
+.modal-dialog {
+  margin: 0 auto;
+}

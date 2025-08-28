@@ -4,7 +4,7 @@ from .models import Note
 # Create your views here.
 def index(request):
     notes = Note.objects.all()
-    return render(request, 'index.html', {'notes': notes})
+    return render(request, 'notes.html', {'notes': notes})
 
 
 from django.shortcuts import get_object_or_404, redirect

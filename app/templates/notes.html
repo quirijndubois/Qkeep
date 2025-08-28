@@ -1,0 +1,18 @@
+<!-- templates/notes.html -->
+{% extends "base.html" %}
+
+{% block title %}Q Keep{% endblock %}
+
+{% block content %}
+  <h1>Q keep</h1>
+  <div class="text-muted">Your notes</div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-3">
+    
+    {% for note in notes %}
+      {% include "note_card.html" with note=note %}
+    {% endfor %}
+    
+    <!-- Add new note card -->
+    {% include "new_note_card.html" %}
+  </div>
+{% endblock %}

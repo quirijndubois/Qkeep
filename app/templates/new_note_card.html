@@ -1,0 +1,35 @@
+<!-- templates/partials/new_note_card.html -->
+<div class="col">
+  <div class="card" data-bs-toggle="modal" data-bs-target="#newNoteModal">
+    <div class="card-body text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+           class="bi bi-plus-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5
+              a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="newNoteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl d-flex align-items-center" style="max-width: 80vw;">
+    <div class="modal-content">
+      <form method="POST" action="{% url 'new_note' %}">
+        {% csrf_token %}
+        <div class="modal-header">
+          <input name="title" class="form-control border-0 modal-title"
+                 style="font-size: 2rem;" placeholder="Title" required autocomplete="off">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <textarea name="content" class="form-control border-0" rows="10"
+                    style="resize: none; overflow: hidden; font-size: 1.5rem;" autocomplete="off"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Create note</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
